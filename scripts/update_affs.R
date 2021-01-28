@@ -14,3 +14,4 @@ todo_refs <- todo_refs[!is.na(todo_refs$pubyr),]
 
 # save data
 write.csv(todo_refs, file.path("data_archive", "aff_data-todo.csv"), row.names = FALSE)
+write.csv(new_refs, file.path("data_archive", "PBDB_refs.csv"), row.names=FALSE)
